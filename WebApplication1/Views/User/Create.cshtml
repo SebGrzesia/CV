@@ -1,0 +1,13 @@
+﻿@model WebApplication1.ViewModel.CreateUserViewModel;
+
+@{
+    ViewBag.Title = "Create user";
+}
+
+<form asp-action="Create" method="post">
+    <input type="text" name="@Html.NameFor(n=> n.Name)" />
+    <input type="text" name="@Html.NameFor(n => n.LastName)"/>
+    <input type="email" name="@Html.NameFor(n => n.Email)"/>
+    <input type="submit" />
+
+</form>
